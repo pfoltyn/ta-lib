@@ -135,7 +135,7 @@ static char *ta_fs_path(int count, ...) {
         char *part;
 
         part = va_arg(argp, char *); 
-        i = strlen(part);
+        i = (int)strlen(part);
 
         memmove(p, part, i); 
         p += i;  
